@@ -96,10 +96,70 @@ color: red;
   font-size: 40px;
 }
 
+.content {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .music-container {
   color: white;
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
-  
+  background-image: linear-gradient(to right, rgb(123, 69, 36), rgb(73, 166, 171));
+  height: 600px;
+  width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(173, 216, 230, 2), 0 -4px 8px rgba(173, 216, 230, 2); 
+}
+
+.music-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.music-groups {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.previous-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 250px;
+  transition-duration: 300ms;
+}
+
+.next-button {
+  width: 50px;
+  height: 50px;
+  padding: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 250px;
+  transition-duration: 300ms;
+}
+
+.next-button:hover, .previous-button:hover {
+  cursor: pointer;
+  transform: scale(1.4);
+
 }
